@@ -2,7 +2,7 @@
 header("Cache-Control: max-age=84000, public");
 header('Content-Type: audio/x-mpegurl');
 function getAllChannelInfo(): array {
-    $json = @file_get_contents('https://babel-in.xyz/babel-9064ba5b81f8d0ef20d14868c8343a65/jplus/channels');
+    $json = @file_get_contents('https://babel-in.xyz/babel-9064ba5b81f8d0ef20d14868c8343a65/tata/channels');
     if ($json === false) {
         header("HTTP/1.1 500 Internal Server Error");
         exit;
